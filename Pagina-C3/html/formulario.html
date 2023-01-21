@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="formulario">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario inscripción para DAM</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Carlos III <img src="../media/logoc3.png" alt="Logo Carlos III" width="200">
+        </h1>
+        <br>
+        <nav>            
+            <span><a title="Noticias" href="#noticias">Noticias</a></span>
+            <span><a title="Módulos" href="#modulos">Modulos</a></span>
+            <span><a title="Contacto" href="contacto"> Contáctanos</a></span>
+            <span><a title="DAM" href="paginaDAM.html" target="_blank"> Página DAM</a></span>
+            <span><a title="Formulario" href="formulario.html" target="_blank"> Formulario</a></span>
+        </nav>
+    </header>
+    <main>
+        <h1>Formulario de inscripción</h1>
+        <div id="audio">
+        <audio controls>
+            <source src="../media/oceandrive.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+        <form action="/registrardatos.php" method="post" autocomplete="off">
+            <div></div>
+            <fieldset>
+                <legend> <h2>Datos personales</h2></legend>
+                <label for="nombre">Nombre y apellidos:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <br><br>
+                <label for="dni">DNI:</label>
+                <input type="text" name="dni" id="dni" required>
+                <br><br>
+                <label for="fechanac">Fecha de nacimiento:</label>
+                <input type="date" name="fechanac" id="fechanac" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" name="domicilio" id="domicilio" maxlength="100" size="50" required>
+                <br><br>
+                <label for="numero">Número de teléfono:</label>
+                <input type="number" name="numero" id="numero" maxlength="9" required>
+                <br><br>
+                <h4>Estudios previos:</h4>
+                <input type="radio" id="doctorado" name="estudios" value="doctorado">
+                <label for="doctorado">Doctorado</label> <br>
+                <input type="radio" id="licenciatura" name="estudios" value="licenciatura">
+                <label for="licenciatura">Licenciatura</label> <br>
+                <input type="radio" id="diplomatura" name="estudios" value="diplomatura">
+                <label for="diplomatura">Diplomatura</label> <br>
+                <input type="radio" id="bachillerato" name="estudios" value="bachillerato">
+                <label for="bachillerato">Bachillerato</label> <br>
+                <input type="radio" id="gradomedio" name="estudios" value="grado medio">
+                <label for="gradomedio">Grado Medio</label>
+                <br>
+            </fieldset>
+    
+            
+            <fieldset class="campos">
+                <legend><h2>Documentación</h2></legend>
+                <label for="archivo">Sube un .zip con la documentación requerida (título de estudios, DNI/pasaporte, permiso de residencia...)</label> <br><br>
+                <div class="icon">
+                    <label for="archivo">
+                        <span class="material-icons"> file_open </span>
+                    </label>
+                  
+                    <input type="file" id="archivo" name="archivo" accept=".zip">
+                  </div>
+                
+            </fieldset>
+    
+            
+            <fieldset class="campos">
+                <legend><h2>Solicitud</h2></legend>
+                
+                <ol> Elige 2 grados según tu orden de preferencia
+                    <br><br>
+                    <li> 
+                        <input list="grado1" name="grado1"> 
+                            <datalist id="grado1">
+                                <option value="dam">DAM</option>
+                                <option value="daw">DAW</option>
+                                <option value="asir">ASIR</option>
+                                <option value="marketing">Marketing</option>
+                            </datalist>
+                    </li>
+                    <br>
+                    <li> 
+                        <input list="grado2" name="grado2"> 
+                            <datalist id="grado2">
+                                <option value="dam">DAM</option>
+                                <option value="daw">DAW</option>
+                                <option value="asir">ASIR</option>
+                                <option value="marketing">Marketing</option>
+                            </datalist>
+                    </li>
+                </ol>
+            </fieldset>
+            <div id="botones">
+            <button onclick="alert('Formulario enviado')" type="submit" id="botonEnviar">Envía el formulario</button> &nbsp; <button type="reset" id="botonReset">Resetea el formulario</button>
+            </div>
+        </form>
+       
+        </main>
+        <footer>
+            <div id="contacto">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12643.383093581579!2d-0.9901911!3d37.6057886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd634224e0bc8c2b%3A0xf62d78a986855460!2sCIFP%20Carlos%20III!5e0!3m2!1ses!2ses!4v1666376851806!5m2!1ses!2ses" 
+                width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+    
+            <div id="contacto">
+                <p id="correo">Mándanos un correo a: <a title="mail" href="mailto:30019702@murciaeduca.es">30019702@murciaeduca.es</a></p>
+                <p id="telefono">O llámanos al <a href="tel:+34968321301">968 321301</a></p>
+            </div>
+             
+            
+        </footer>
+</body>
+</html>
