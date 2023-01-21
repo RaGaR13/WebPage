@@ -1,0 +1,287 @@
+
+h1,h2,h3{
+    font-family: 'Dosis', sans-serif;
+}
+h1{
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+h2{
+    color:white;
+    text-align: center;
+    transition: font-size 0.5s linear;
+}
+h2:hover{
+    font-size: 50px;
+}
+h3{
+    color: #1a3d81;
+
+}
+span,p,a,label,input,datalist,th,td,li{
+    font-family: 'Philosopher', sans-serif;
+}
+main{
+    max-width: 1170px;
+    margin: auto;
+}
+body{
+    margin: 0px
+}
+header{
+    background: rgb(44,129,212);
+    background: radial-gradient(circle, rgba(44,129,212,1) 33%, rgba(44,101,212,1) 66%, rgba(26,61,129,1) 100%);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid black;
+}
+footer{
+    background-color: black;
+    border-top:3px solid #2c65d4;
+}
+
+
+/*PÁGINA PRINCIPAL*/
+.paginaprincipal{
+    background-color: #1a3d81;
+}
+
+.paginaprincipal h1{
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
+.paginaprincipal section{
+    background-color:#2c65d4;
+    padding: 20px;
+}
+
+header img {    
+    vertical-align: middle;
+    max-width: 150px;
+}
+#header h1 {
+    margin: 0 0 0 0;
+    padding-left: 10px;
+    display: inline;
+}
+nav a{
+    background-color: #1a3d81;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+nav a:hover{
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+    color: #1a3d81;
+    border-radius: 10px;
+}
+
+nav{
+    text-align: center;
+}
+
+#desaparecer{
+    
+    overflow: hidden;
+    animation: aparecer 5s ease-in-out forwards;
+}
+
+#desaparecer p{
+    padding: 1px;
+}
+
+@keyframes aparecer {
+    0% { 
+      width: 0px;
+      white-space: nowrap;
+    }
+    99%{
+        width: 99%;
+        white-space: nowrap;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+section img{
+    display: block;
+    margin: auto;
+}
+
+section iframe {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+    iframe {   
+        display: none;   
+    }
+    section iframe {   
+    display: none;   
+    }
+
+    #flecha{
+        display: none;
+    }
+}
+
+#imagen{
+    text-align: center;
+}
+
+#flecha{
+    padding: 10px;
+    color:white;
+    margin-left: auto;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    max-width: 100px;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: #2c65d4;
+}
+
+#contacto{
+    display: inline-block;
+    margin-left: 75px;
+    vertical-align: middle;
+}
+
+#telefono{
+    cursor: url(../media/telefono.png),pointer;
+}
+#correo{
+    cursor: url(../media/correo.png),pointer;
+}
+/*PAGINA DAM*/
+.paginadam{
+    background-color: rgb(43, 144, 190);
+}
+
+.paginadam h1, .paginadam h2 {
+    text-align: center;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+    background-color: #3f9eca;
+    padding: 10px 200px 10px 200px;
+    border-radius: 5px;
+    border: solid 2px rgb(139, 189, 255);
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;     
+}
+
+table{
+    margin-bottom: 30px;
+}
+/* PÁGINA FORMULARIO */
+.formulario h1{
+    text-align: center;
+}
+
+form>div+fieldset{
+    background-color: #ff4141;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0px 0px 20px 40px;
+}
+
+form>div+fieldset input{
+    background-color: #ff9898;
+}
+form>div+fieldset h2{
+    background-color: #ff4141;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div+fieldset{
+    background-color: white;
+}
+
+
+.icon > input {
+    visibility:hidden;
+    width:0;
+    height:0
+}
+
+#audio{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+    background-color: #3f9eca;
+}
+
+.campos{
+    background-color: #265881;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0px 0px 20px 40px;
+}
+
+.campos h2{
+    background-color: #265881;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#botones{
+    margin-top: 30px;    
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width:102px;
+    height:50px;
+    margin-right: 30px;
+    background:linear-gradient(#2e466e, #415989);
+    box-shadow:inset 15px -32px 15px 3px #23395e;
+    text-shadow:inset 0px 1px 0px #263666;
+    border-width:2px;
+    color:#fff;
+    border-color:rgba(172, 200, 236, 1);
+}
+
+#botonEnviar{   
+    border-top-left-radius:42px;
+    border-bottom-left-radius:42px;   
+}
+#botonReset{
+    border-top-right-radius:42px;
+    border-bottom-right-radius:42px;
+}
+
+button:hover{
+    background: linear-gradient(#415989, #2e466e);
+}
